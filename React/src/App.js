@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import SearchParams from "./SearchParams";
 // eslint-disable-next-line no-unused-vars
-import Pet from "./Pet"
+// import Pet from "./Pet"
 
 // const App = () => {
 //   return React.createElement("div", {}, [
@@ -24,11 +25,10 @@ import Pet from "./Pet"
 const App = () => {
   return (
     <div>
-      <h1>Adopt Me!</h1>
-      <Pet name="Coco" animal="Dog" breed="Pug" />
-      <Pet name="Rufus" animal="Cat" breed="Russian Blue" />
-      <Pet name="Sparks" animal="Monkey" breed="Chip" />
-    </div>
+    <h1>Adopt Me!</h1>
+    <SearchParams />
+   </div>
+    
   );
 };
 
