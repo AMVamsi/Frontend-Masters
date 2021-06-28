@@ -1,22 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom";
+// eslint-disable-next-line no-unused-vars
 import Pet from "./Pet"
 
+// const App = () => {
+//   return React.createElement("div", {}, [
+//     React.createElement("h1", {}, "Adopt Me!"),
+//     React.createElement(Pet, { name: "Coco", animal: "Dog", breed: "Pug" }),
+//     React.createElement(Pet, {
+//       name: "Rufus",
+//       animal: "Cat",
+//       breed: "Russian Blue",
+//     }),
+//     React.createElement(Pet, {
+//       name: "Sparks",
+//       animal: "Monkey",
+//       breed: "Chimp",
+//     }),
+//   ]);
+// };
+
+// eslint-disable-next-line no-unused-vars
 const App = () => {
-  return React.createElement("div", {}, [
-    React.createElement("h1", {}, "Adopt Me!"),
-    React.createElement(Pet, { name: "Coco", animal: "Dog", breed: "Pug" }),
-    React.createElement(Pet, {
-      name: "Rufus",
-      animal: "Cat",
-      breed: "Russian Blue",
-    }),
-    React.createElement(Pet, {
-      name: "Sparks",
-      animal: "Monkey",
-      breed: "Chimp",
-    }),
-  ]);
+  return (
+    <div>
+      <h1>Adopt Me!</h1>
+      <Pet name="Coco" animal="Dog" breed="Pug" />
+      <Pet name="Rufus" animal="Cat" breed="Russian Blue" />
+      <Pet name="Sparks" animal="Monkey" breed="Chip" />
+    </div>
+  );
 };
 
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
